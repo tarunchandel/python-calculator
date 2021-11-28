@@ -1,10 +1,8 @@
-def find_winning_bidder(bids_list):
-  highest_bid = 0
-  highest_bidder = ""
+def format_name(first_name, last_name):
+  """Takes first and last name and retruns the full name in title case."""
+  name = first_name.title() + " " + last_name.title()
+  return(name)
 
-  for name in bids_list:
-    if bids_list[name] > highest_bid:
-      highest_bidder = name
-      highest_bid = bids_list[name]
-  
-  return([highest_bidder, highest_bid])
+print(format_name("TArun", "chandel"))
+
+
